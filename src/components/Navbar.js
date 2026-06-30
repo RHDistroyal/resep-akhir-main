@@ -8,9 +8,19 @@ const Navbar = ({ loggedInUser, handleLogout, darkMode, toggleDarkMode }) => {
     <nav className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-4">
         {/* Logo */}
-        <div className="text-2xl font-extrabold tracking-tight">
-          <Link to="/" className="text-blue-600 dark:text-blue-400 hover:opacity-80 transition duration-300">
-            ResepKu
+        <div className="flex items-center">
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
+              <span 
+                className="text-white text-2xl md:text-3xl pr-1" 
+                style={{ fontFamily: "'Brush Script MT', 'Lucida Handwriting', cursive", fontStyle: "italic", fontWeight: "bold" }}
+              >
+                R
+              </span>
+            </div>
+            <span className="text-xl md:text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              ResepKu
+            </span>
           </Link>
         </div>
 
