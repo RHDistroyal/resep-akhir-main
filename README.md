@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🍳 ResepKu - Aplikasi Katalog Resep Modern
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**ResepKu** adalah sebuah aplikasi web responsif dan modern yang dirancang untuk memudahkan Anda menemukan, menyimpan, dan membagikan resep masakan favorit Anda. Aplikasi ini dibangun dengan antarmuka yang elegan serta dilengkapi fitur *Light Mode* dan *Dark Mode* untuk kenyamanan mata pengguna.
 
-## Available Scripts
+## ✨ Fitur Utama
+- **Dark/Light Mode**: Sesuaikan tema aplikasi dengan preferensi Anda (terang atau gelap).
+- **Katalog & Filter**: Cari resep berdasarkan nama atau filter berdasarkan kategori (Makanan Utama, Pembuka, Penutup, dll).
+- **Sistem Autentikasi**: Fitur Login dan Register sederhana agar setiap pengguna memiliki pengalaman yang dipersonalisasi.
+- **Koleksi Favorit**: Simpan resep-resep yang Anda sukai ke dalam daftar Favorit untuk diakses kembali dengan cepat.
+- **CRUD Resep**: Pengguna (atau Admin) dapat menambahkan resep baru, mengubah detail resep, dan menghapus resep (Create, Read, Update, Delete).
 
-In the project directory, you can run:
+## 🛠️ Teknologi yang Digunakan
+- **Frontend**: React.js, Tailwind CSS, React Router DOM
+- **Backend / Database**: JSON Server (sebagai Mock REST API)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Panduan Memulai (Mulai dari Awal hingga Dijalankan)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi ini di komputer lokal Anda:
 
-### `npm test`
+### 1. Prasyarat (Persiapan)
+Pastikan Anda sudah menginstal **Node.js** di komputer Anda. Jika belum, silakan unduh dan instal dari [nodejs.org](https://nodejs.org/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Clone Repositori (Unduh Kode)
+Buka terminal (Command Prompt, PowerShell, atau Git Bash), lalu jalankan perintah ini untuk menyalin kode ke komputer Anda:
+```bash
+git clone <masukkan-url-repository-github-disini>
+```
+*(Catatan: Jika Anda sudah mengunduh file ZIP-nya, cukup ekstrak filenya saja).*
 
-### `npm run build`
+### 3. Masuk ke Folder Proyek
+Pindah ke direktori tempat proyek berada:
+```bash
+cd resep-akhir-main
+```
+*(Ganti nama folder jika nama folder ekstrak Anda berbeda).*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. Instal Dependensi
+Instal semua modul yang dibutuhkan oleh aplikasi ini dengan menjalankan perintah:
+```bash
+npm install
+```
+Tunggu hingga proses instalasi selesai (biasanya memakan waktu 1-3 menit).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. Jalankan Server Database (Backend)
+Karena aplikasi ini menggunakan `json-server` untuk menyimpan data resep dan pengguna secara lokal (di file `server/db.json`), Anda harus menyalakan servernya terlebih dahulu.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Di terminal Anda, jalankan:
+```bash
+npm run server
+```
+*Biarkan terminal ini tetap terbuka.*
 
-### `npm run eject`
+### 6. Jalankan Aplikasi React (Frontend)
+Buka **terminal baru** (jangan tutup terminal database di langkah 5), pastikan Anda berada di folder yang sama (`resep-akhir-main`), lalu ketik:
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Aplikasi akan otomatis terbuka di browser Anda pada alamat:
+`http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Selamat memasak dan mengeksplorasi resep! 🍽️
