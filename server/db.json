@@ -46,7 +46,8 @@
       ],
       "time": "30 menit",
       "category": "Makanan Utama",
-      "id": "1"
+      "id": "1",
+      "isBookmarked": true
     },
     {
       "name": "Samosa",

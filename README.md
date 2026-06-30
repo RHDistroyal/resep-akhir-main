@@ -43,22 +43,14 @@ npm install
 ```
 Tunggu hingga proses instalasi selesai (biasanya memakan waktu 1-3 menit).
 
-### 5. Jalankan Server Database (Backend)
-Karena aplikasi ini menggunakan `json-server` untuk menyimpan data resep dan pengguna secara lokal (di file `server/db.json`), Anda harus menyalakan servernya terlebih dahulu.
+### 5. Jalankan Aplikasi
+Karena aplikasi ini menggunakan `json-server` dan React, Anda bisa menjalankan keduanya secara bersamaan hanya dengan satu perintah:
 
-Di terminal Anda, jalankan:
 ```bash
-npm run server
-```
-*Biarkan terminal ini tetap terbuka.*
-
-### 6. Jalankan Aplikasi React (Frontend)
-Buka **terminal baru** (jangan tutup terminal database di langkah 5), pastikan Anda berada di folder yang sama (`resep-akhir-main`), lalu ketik:
-```bash
-npm start
+npm run dev
 ```
 
-Aplikasi akan otomatis terbuka di browser Anda pada alamat:
+Aplikasi akan otomatis menyalakan database di *background* dan membuka aplikasi React di browser Anda pada alamat:
 `http://localhost:3000`
 
 ---
