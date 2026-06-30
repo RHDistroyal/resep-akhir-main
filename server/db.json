@@ -46,8 +46,7 @@
       ],
       "time": "30 menit",
       "category": "Makanan Utama",
-      "id": "1",
-      "isBookmarked": false
+      "id": "1"
     },
     {
       "name": "Samosa",
@@ -473,7 +472,8 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Pembuka",
-      "id": "5a2a"
+      "id": "5a2a",
+      "isBookmarked": true
     },
     {
       "name": "Pempek Palembang",
@@ -537,7 +537,8 @@
         "Goreng dengan minyak panas menggunakan api kecil"
       ],
       "time": "i Jam",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "isBookmarked": true
     },
     {
       "id": "8964",
@@ -1185,7 +1186,8 @@
         "Beberuk terong/sambel terong siap disajikan"
       ],
       "time": "15 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "isBookmarked": true
     },
     {
       "name": "Kue Cara",
@@ -1524,7 +1526,8 @@
         "Setelah matang keluarkan dari oven, Tunggu agak dingin baru di potong"
       ],
       "time": "1 Jam 30 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "isBookmarked": true
     },
     {
       "id": "5d4e",
@@ -1773,7 +1776,8 @@
         "Sarikayo khas Minang siap di nikmati"
       ],
       "time": "30 Menit",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "isBookmarked": true
     },
     {
       "name": "Kue Bay Tat",
@@ -1801,7 +1805,8 @@
       ],
       "time": "3 Jam",
       "category": "Makanan Penutup",
-      "id": "23a1"
+      "id": "23a1",
+      "isBookmarked": true
     },
     {
       "name": "Bolu Kemojo",
@@ -2357,7 +2362,8 @@
         "Kalau mau lebih enak, bisa di simpan di kulkas ya"
       ],
       "time": "1 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "isBookmarked": true
     },
     {
       "id": "4c2b",
@@ -2546,7 +2552,8 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Penutup",
-      "id": "3a71"
+      "id": "3a71",
+      "isBookmarked": true
     },
     {
       "name": "Klapertart",
@@ -2822,7 +2829,8 @@
         "Angkat dan gulingkan di kelapa parut dan sajikan"
       ],
       "time": "40 Menit",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "isBookmarked": true
     },
     {
       "id": "8750",
@@ -3032,7 +3040,8 @@
         "Setelah air menyusut tuang santan, kecilkan api, masak sambil terus diaduk sampai daging empuk dan santan menyusut"
       ],
       "time": "2 Jam 30 Menit",
-      "category": "Makanan Utama"
+      "category": "Makanan Utama",
+      "isBookmarked": true
     },
     {
       "id": "b455",
