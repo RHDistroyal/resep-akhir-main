@@ -1,108 +1,184 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { Heart, Search, RotateCcw, ArrowRight, ChefHat, Sparkles } from "lucide-react";
+import { toast } from "react-toastify";
+import RecipeCard from "../components/RecipeCard";
 
-function Favorites() {
+export default function Favorites({ onUpdateFavoritesCount }) {
   const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("Semua");
 
-  useEffect(() => {
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const isAdmin = loggedInUser?.username === "admin";
+
+  const fetchFavorites = () => {
     fetch("http://localhost:5000/recipes")
       .then((res) => res.json())
       .then((data) => {
-        const bookmarkedRecipes = data.filter((recipe) => recipe.isBookmarked);
-        setRecipes(bookmarkedRecipes);
+        const bookmarked = data.filter((r) => r.isBookmarked);
+        setRecipes(bookmarked);
+        setLoading(false);
+        if (onUpdateFavoritesCount) onUpdateFavoritesCount(bookmarked.length);
+      })
+      .catch((err) => {
+        console.error(err);
+        setLoading(false);
       });
+  };
+
+  useEffect(() => {
+    fetchFavorites();
   }, []);
 
   const handleUnbookmark = (id) => {
+    // Optimistic removal
+    setRecipes((prev) => prev.filter((r) => r.id !== id));
+    toast.info("Resep dihapus dari koleksi Favorit.");
+
     fetch(`http://localhost:5000/recipes/${id}`, {
       method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ isBookmarked: false }),
-    }).then(() =>
-      setRecipes((prevRecipes) =>
-        prevRecipes.filter((recipe) => recipe.id !== id)
-      )
-    );
+    })
+      .then(() => {
+        fetch("http://localhost:5000/recipes")
+          .then((res) => res.json())
+          .then((all) => {
+            const count = all.filter((r) => r.isBookmarked).length;
+            if (onUpdateFavoritesCount) onUpdateFavoritesCount(count);
+          });
+      })
+      .catch((err) => {
+        console.error(err);
+        fetchFavorites();
+      });
   };
 
+  const filteredFavorites = useMemo(() => {
+    return recipes.filter((r) => {
+      if (selectedCategory !== "Semua" && r.category !== selectedCategory) {
+        return false;
+      }
+      if (searchTerm.trim() !== "") {
+        return r.name.toLowerCase().includes(searchTerm.toLowerCase().trim());
+      }
+      return true;
+    });
+  }, [recipes, selectedCategory, searchTerm]);
+
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="mb-8 border-b border-gray-200 dark:border-gray-800 pb-4">
-        <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-2">
-          Koleksi Favorit
-        </h1>
-        <p className="text-gray-500 dark:text-gray-400">
-          Resep-resep pilihan yang telah Anda simpan.
-        </p>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-fade-in">
+      {/* Header Banner */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-stone-200 dark:border-stone-800 pb-6">
+        <div>
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 text-rose-600 dark:bg-rose-950/40 dark:text-rose-400 text-xs font-bold mb-2">
+            <Heart className="w-3.5 h-3.5 fill-rose-500 text-rose-500" />
+            <span>Koleksi Resep Pilihan Saya</span>
+          </div>
+          <h1 className="font-serif text-3xl sm:text-4xl font-black text-stone-900 dark:text-white">
+            Resep Favorit
+          </h1>
+          <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mt-1">
+            Simpanan hidangan favorit untuk menu harian dan momen spesial Anda.
+          </p>
+        </div>
+
+        {/* Counter Badge */}
+        <div className="px-5 py-2.5 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm text-xs font-bold text-stone-700 dark:text-stone-300">
+          Total Koleksi: <span className="text-brand-500 font-black">{recipes.length} Resep</span>
+        </div>
       </div>
 
-      {recipes.length === 0 ? (
-        <div className="text-center py-24 bg-white dark:bg-gray-800 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm">
-          <div className="text-6xl mb-4">🍽️</div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Belum ada resep favorit</h2>
-          <p className="text-gray-500 dark:text-gray-400 mb-6">Jelajahi resep dan simpan yang Anda sukai di sini.</p>
-          <Link to="/" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition shadow-lg hover:shadow-xl">
-            Jelajahi Resep
+      {/* Filter and Search within favorites */}
+      {recipes.length > 0 && (
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="relative w-full sm:w-80">
+            <Search className="w-4 h-4 text-stone-400 absolute left-3.5 top-3" />
+            <input
+              type="text"
+              placeholder="Cari dalam favorit..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-10 pr-4 py-2.5 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-brand-500 text-stone-900 dark:text-white placeholder-stone-400"
+            />
+          </div>
+
+          <div className="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
+            {["Semua", "Makanan Utama", "Makanan Pembuka", "Makanan Penutup"].map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition ${
+                  selectedCategory === cat
+                    ? "bg-brand-500 text-white shadow-sm"
+                    : "bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 text-stone-600 dark:text-stone-400 hover:border-brand-300"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Main Content */}
+      {loading ? (
+        <div className="py-24 text-center space-y-4">
+          <div className="w-12 h-12 border-4 border-brand-500 border-t-transparent rounded-full animate-spin mx-auto" />
+          <p className="text-xs font-semibold text-stone-500">Memuat koleksi favorit...</p>
+        </div>
+      ) : recipes.length === 0 ? (
+        <div className="py-20 px-6 text-center bg-white dark:bg-stone-900 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-soft space-y-5 max-w-lg mx-auto">
+          <div className="w-20 h-20 rounded-3xl bg-rose-50 dark:bg-rose-950/40 text-rose-500 flex items-center justify-center mx-auto shadow-inner">
+            <Heart className="w-10 h-10 fill-rose-500/20 text-rose-500" />
+          </div>
+
+          <div className="space-y-1.5">
+            <h3 className="font-serif text-2xl font-black text-stone-900 dark:text-white">
+              Belum Ada Resep Favorit
+            </h3>
+            <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed">
+              Tekan ikon hati (❤️) pada kartu resep yang Anda sukai di beranda untuk menyimpannya di sini.
+            </p>
+          </div>
+
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-xs shadow-glow transition duration-200"
+          >
+            <span>Jelajahi Resep Sekarang</span>
+            <ArrowRight className="w-4 h-4" />
           </Link>
+        </div>
+      ) : filteredFavorites.length === 0 ? (
+        <div className="py-16 text-center bg-white dark:bg-stone-900 rounded-3xl border border-dashed border-stone-200 dark:border-stone-800 space-y-3">
+          <p className="text-xs text-stone-500">Tidak ada resep favorit yang cocok dengan kata kunci pencarian.</p>
+          <button
+            onClick={() => {
+              setSearchTerm("");
+              setSelectedCategory("Semua");
+            }}
+            className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-500 hover:underline"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            Reset Pencarian
+          </button>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {recipes.map((recipe) => (
-            <div 
-              key={recipe.id} 
-              className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden transform hover:-translate-y-1 transition-all duration-300 flex flex-col"
-            >
-              <div className="relative h-48 overflow-hidden group">
-                <img
-                  src={recipe.image}
-                  alt={recipe.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/400x300?text=No+Image';
-                  }}
-                />
-                <button
-                  onClick={() => handleUnbookmark(recipe.id)}
-                  className="absolute top-3 right-3 p-2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-full shadow-sm hover:scale-110 hover:bg-red-50 dark:hover:bg-red-900/30 transition-all group-hover:opacity-100 opacity-0"
-                  aria-label="Remove Favorite"
-                  title="Hapus dari Favorit"
-                >
-                  ❌
-                </button>
-                <div className="absolute top-3 left-3 px-3 py-1 bg-black/60 backdrop-blur-md text-white text-xs font-semibold rounded-full">
-                  {recipe.category}
-                </div>
-              </div>
-              
-              <div className="p-5 flex flex-col flex-grow">
-                <h2 className="text-lg font-bold text-gray-900 dark:text-white line-clamp-1 mb-1">{recipe.name}</h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-2 flex-grow">
-                  Resep lezat yang mudah dibuat untuk hidangan spesial Anda.
-                </p>
-                
-                <div className="flex space-x-2 mt-auto">
-                  <Link
-                    to={`/recipe/${recipe.id}`}
-                    className="flex-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white text-center py-2 rounded-xl font-medium transition-colors"
-                  >
-                    Lihat Resep
-                  </Link>
-                  <button
-                    onClick={() => handleUnbookmark(recipe.id)}
-                    className="px-4 bg-red-50 dark:bg-red-900/30 text-red-500 hover:bg-red-500 hover:text-white dark:hover:bg-red-500 dark:hover:text-white text-center py-2 rounded-xl font-medium transition-colors"
-                  >
-                    Hapus
-                  </button>
-                </div>
-              </div>
-            </div>
+          {filteredFavorites.map((recipe) => (
+            <RecipeCard
+              key={recipe.id}
+              recipe={recipe}
+              onToggleFavorite={() => handleUnbookmark(recipe.id)}
+              isAdmin={isAdmin}
+              loggedInUser={loggedInUser}
+            />
           ))}
         </div>
       )}
     </div>
   );
 }
-
-export default Favorites;
