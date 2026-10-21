@@ -47,7 +47,12 @@
       "time": "30 menit",
       "category": "Makanan Utama",
       "id": "1",
-      "isBookmarked": true
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 250,
+      "rating": 4.5,
+      "reviewsCount": 12,
+      "isBookmarked": false
     },
     {
       "name": "Samosa",
@@ -89,7 +94,12 @@
       "time": "40 menit",
       "category": "Makanan Pembuka",
       "id": "8cd2",
-      "isBookmarked": false
+      "isBookmarked": false,
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 267,
+      "rating": 4.7,
+      "reviewsCount": 25
     },
     {
       "name": "Kue Muso Mocaf",
@@ -137,7 +147,13 @@
       ],
       "time": "55 Menit",
       "category": "Makanan Pembuka",
-      "id": "3310"
+      "id": "3310",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 284,
+      "rating": 4.9,
+      "reviewsCount": 38,
+      "isBookmarked": false
     },
     {
       "id": "9cc4",
@@ -172,7 +188,13 @@
         "Sajikan"
       ],
       "time": "20 menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mudah",
+      "servings": 2,
+      "calories": 301,
+      "rating": 4.6,
+      "reviewsCount": 51,
+      "isBookmarked": false
     },
     {
       "name": "Nasi Bakmoy",
@@ -223,7 +245,13 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Utama",
-      "id": "b522"
+      "id": "b522",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 318,
+      "rating": 4.8,
+      "reviewsCount": 64,
+      "isBookmarked": false
     },
     {
       "name": "Gulai Belacan",
@@ -262,7 +290,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Utama",
-      "id": "ed52"
+      "id": "ed52",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 335,
+      "rating": 4.5,
+      "reviewsCount": 77,
+      "isBookmarked": false
     },
     {
       "name": "Mie Aceh",
@@ -307,7 +341,13 @@
       ],
       "time": "45 Menit",
       "category": "Makanan Utama",
-      "id": "ce26"
+      "id": "ce26",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 352,
+      "rating": 4.7,
+      "reviewsCount": 90,
+      "isBookmarked": false
     },
     {
       "name": "Kuah Sie Itek",
@@ -368,7 +408,13 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Utama",
-      "id": "7f69"
+      "id": "7f69",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 369,
+      "rating": 4.9,
+      "reviewsCount": 18,
+      "isBookmarked": false
     },
     {
       "name": "Rujak Aceh",
@@ -407,7 +453,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Pembuka",
-      "id": "c4e3"
+      "id": "c4e3",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 386,
+      "rating": 4.6,
+      "reviewsCount": 31,
+      "isBookmarked": false
     },
     {
       "name": "Eungkot Keumamah",
@@ -446,7 +498,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Utama",
-      "id": "d48d"
+      "id": "d48d",
+      "difficulty": "Mahir",
+      "servings": 2,
+      "calories": 403,
+      "rating": 4.8,
+      "reviewsCount": 44,
+      "isBookmarked": false
     },
     {
       "name": "Lemang",
@@ -474,7 +532,12 @@
       "time": "1 Jam",
       "category": "Makanan Pembuka",
       "id": "5a2a",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 420,
+      "rating": 4.5,
+      "reviewsCount": 57
     },
     {
       "name": "Pempek Palembang",
@@ -500,7 +563,13 @@
       ],
       "time": "45 Menit",
       "category": "Makanan Pembuka",
-      "id": "1294"
+      "id": "1294",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 437,
+      "rating": 4.7,
+      "reviewsCount": 70,
+      "isBookmarked": false
     },
     {
       "id": "25ad",
@@ -539,7 +608,12 @@
       ],
       "time": "i Jam",
       "category": "Makanan Pembuka",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 454,
+      "rating": 4.9,
+      "reviewsCount": 83
     },
     {
       "id": "8964",
@@ -571,7 +645,13 @@
         "Selalu awasi airnya jangan sampai kekeringan usahakan bungkusan selalu terendam karena jika tidak terendam akan menghasilkan pendap yg gatal"
       ],
       "time": "2 Jam",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 471,
+      "rating": 4.6,
+      "reviewsCount": 96,
+      "isBookmarked": false
     },
     {
       "name": "Roti Jala Kari Ayam",
@@ -601,7 +681,13 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Pembuka",
-      "id": "1255"
+      "id": "1255",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 488,
+      "rating": 4.8,
+      "reviewsCount": 24,
+      "isBookmarked": false
     },
     {
       "id": "c41c",
@@ -646,7 +732,13 @@
         "Otak\"siap dihidangkan, otak\" ini biasa dimakan tanpa cocolan udah enak banget untuk cemilan, bisa juga untuk lauk"
       ],
       "time": "90 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mahir",
+      "servings": 2,
+      "calories": 505,
+      "rating": 4.5,
+      "reviewsCount": 37,
+      "isBookmarked": false
     },
     {
       "id": "6b2c",
@@ -674,7 +766,13 @@
         "Lalu kukus kembali 20 menit setelah matang dinginkan sajikan"
       ],
       "time": "1 Jam 30 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 522,
+      "rating": 4.7,
+      "reviewsCount": 50,
+      "isBookmarked": false
     },
     {
       "id": "af26",
@@ -707,7 +805,13 @@
         "Laksa kuah siap dihidangkan"
       ],
       "time": "45 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 539,
+      "rating": 4.9,
+      "reviewsCount": 63,
+      "isBookmarked": false
     },
     {
       "id": "d0e3",
@@ -749,7 +853,13 @@
         "Sajikan selagi hangat dengan menggunakan saus dimsum"
       ],
       "time": "2 Jam",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 556,
+      "rating": 4.6,
+      "reviewsCount": 76,
+      "isBookmarked": false
     },
     {
       "name": "Selada Banjar",
@@ -799,7 +909,13 @@
       ],
       "time": "50 Menit",
       "category": "Makanan Pembuka",
-      "id": "644c"
+      "id": "644c",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 573,
+      "rating": 4.8,
+      "reviewsCount": 89,
+      "isBookmarked": false
     },
     {
       "name": "Kue Gagatas",
@@ -832,7 +948,13 @@
       ],
       "time": "45 Menit",
       "category": "Makanan Pembuka",
-      "id": "0d35"
+      "id": "0d35",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 590,
+      "rating": 4.5,
+      "reviewsCount": 17,
+      "isBookmarked": false
     },
     {
       "id": "9d58",
@@ -863,7 +985,13 @@
         "Selamat mencoba"
       ],
       "time": "45 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mahir",
+      "servings": 2,
+      "calories": 257,
+      "rating": 4.7,
+      "reviewsCount": 30,
+      "isBookmarked": false
     },
     {
       "name": "Ketan Bintul",
@@ -911,7 +1039,13 @@
       ],
       "time": "1 Jam 30 Menit",
       "category": "Makanan Pembuka",
-      "id": "e36e"
+      "id": "e36e",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 274,
+      "rating": 4.9,
+      "reviewsCount": 43,
+      "isBookmarked": false
     },
     {
       "id": "9b3c",
@@ -937,7 +1071,13 @@
         "Beri bubuk serundeng dan bawang goreng"
       ],
       "time": "15 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mudah",
+      "servings": 6,
+      "calories": 291,
+      "rating": 4.6,
+      "reviewsCount": 56,
+      "isBookmarked": false
     },
     {
       "name": "Batagor",
@@ -984,7 +1124,13 @@
       ],
       "time": "45 Menit",
       "category": "Makanan Pembuka",
-      "id": "e23f"
+      "id": "e23f",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 308,
+      "rating": 4.8,
+      "reviewsCount": 69,
+      "isBookmarked": false
     },
     {
       "id": "84fe",
@@ -1021,7 +1167,13 @@
         "Disajikan dengan saus cocolan kental, super nikmat"
       ],
       "time": "30 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 325,
+      "rating": 4.5,
+      "reviewsCount": 82,
+      "isBookmarked": false
     },
     {
       "name": "Selat Usar",
@@ -1053,7 +1205,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Pembuka",
-      "id": "1e94"
+      "id": "1e94",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 342,
+      "rating": 4.7,
+      "reviewsCount": 95,
+      "isBookmarked": false
     },
     {
       "id": "6faa",
@@ -1093,7 +1251,13 @@
         "Siram dengan saus kacang dan tambahkan kecap, jika suka Siap dinikmati"
       ],
       "time": "20 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Sedang",
+      "servings": 2,
+      "calories": 359,
+      "rating": 4.9,
+      "reviewsCount": 23,
+      "isBookmarked": false
     },
     {
       "name": "Tipat Cantok",
@@ -1128,7 +1292,13 @@
       ],
       "time": "10 Menit",
       "category": "Makanan Pembuka",
-      "id": "7852"
+      "id": "7852",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 376,
+      "rating": 4.6,
+      "reviewsCount": 36,
+      "isBookmarked": false
     },
     {
       "id": "3416",
@@ -1155,7 +1325,13 @@
         "Ubi merekah sempurna dan cantik"
       ],
       "time": "20 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 393,
+      "rating": 4.8,
+      "reviewsCount": 49,
+      "isBookmarked": false
     },
     {
       "id": "7b84",
@@ -1188,7 +1364,12 @@
       ],
       "time": "15 Menit",
       "category": "Makanan Pembuka",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Mudah",
+      "servings": 4,
+      "calories": 410,
+      "rating": 4.5,
+      "reviewsCount": 62
     },
     {
       "name": "Kue Cara",
@@ -1222,7 +1403,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Pembuka",
-      "id": "dd4b"
+      "id": "dd4b",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 427,
+      "rating": 4.7,
+      "reviewsCount": 75,
+      "isBookmarked": false
     },
     {
       "id": "8e37",
@@ -1249,7 +1436,13 @@
         "Sajikan hangat"
       ],
       "time": "1 Jam",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 444,
+      "rating": 4.9,
+      "reviewsCount": 88,
+      "isBookmarked": false
     },
     {
       "name": "Panada",
@@ -1299,7 +1492,13 @@
       ],
       "time": "1 Jam 30 Menit",
       "category": "Makanan Pembuka",
-      "id": "2442"
+      "id": "2442",
+      "difficulty": "Mahir",
+      "servings": 2,
+      "calories": 461,
+      "rating": 4.6,
+      "reviewsCount": 16,
+      "isBookmarked": false
     },
     {
       "name": "Lapa Lapa",
@@ -1322,7 +1521,13 @@
       ],
       "time": "2 Jam",
       "category": "Makanan Pembuka",
-      "id": "5a68"
+      "id": "5a68",
+      "difficulty": "Mudah",
+      "servings": 4,
+      "calories": 478,
+      "rating": 4.8,
+      "reviewsCount": 29,
+      "isBookmarked": false
     },
     {
       "id": "7ab6",
@@ -1377,7 +1582,13 @@
         "Siap di hidangkan"
       ],
       "time": "2 Jam",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 495,
+      "rating": 4.5,
+      "reviewsCount": 42,
+      "isBookmarked": false
     },
     {
       "id": "60d0",
@@ -1415,7 +1626,13 @@
         "Campur semua bahan bahan Kohu kohu, aduk rata, Koreksi rasa"
       ],
       "time": "50 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 512,
+      "rating": 4.7,
+      "reviewsCount": 55,
+      "isBookmarked": false
     },
     {
       "id": "67de",
@@ -1451,7 +1668,13 @@
         "Gohu ikan siap dinikmati dg sagu, pisang atau umbi2an rebus"
       ],
       "time": "30 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 529,
+      "rating": 4.9,
+      "reviewsCount": 68,
+      "isBookmarked": false
     },
     {
       "id": "7137",
@@ -1496,12 +1719,17 @@
         "Floss Roll Bread/Roti Abon Gulung siap disajikan dan dinikmati"
       ],
       "time": "2 Jam",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 546,
+      "rating": 4.6,
+      "reviewsCount": 81,
+      "isBookmarked": false
     },
     {
-      "id": "797c",
       "name": "Kue Lontar",
-      "image": "https://ik.imagekit.io/dcjlghyytp1/https://sayurbox-blog-stage.s3.amazonaws.com/uploads/2022/08/2990DF34-9876-41D8-9E0A-626040259D62.jpeg?tr=f-auto",
+      "image": "https://i0.wp.com/resepkoki.id/wp-content/uploads/2022/01/Kue-Lontar-Papua.jpg?fit=1440%2C1920&ssl=1",
       "note": [
         "Kue Lontar adalah kue khas Papua yang dipercaya berasal dari pengaruh Hindia Belanda pada tahun 1910. Nama \"Lontar\" sendiri merupakan adaptasi dari bahasa Belanda \"ronde taart\" yang berarti kue bundar yang kemudian diucapkan dengan cara yang lebih mudah oleh masyarakat lokal."
       ],
@@ -1528,7 +1756,13 @@
       ],
       "time": "1 Jam 30 Menit",
       "category": "Makanan Pembuka",
-      "isBookmarked": true
+      "id": "797c",
+      "difficulty": "Sedang",
+      "servings": 2,
+      "calories": 563,
+      "rating": 4.8,
+      "reviewsCount": 94,
+      "isBookmarked": false
     },
     {
       "id": "5d4e",
@@ -1562,7 +1796,13 @@
         "Sagu lempeng siap disajikan!"
       ],
       "time": "30 Menit",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 580,
+      "rating": 4.5,
+      "reviewsCount": 22,
+      "isBookmarked": false
     },
     {
       "name": "Papeda",
@@ -1586,7 +1826,13 @@
       ],
       "time": "5 Menit",
       "category": "Makanan Pembuka",
-      "id": "20f2"
+      "id": "20f2",
+      "difficulty": "Mudah",
+      "servings": 6,
+      "calories": 597,
+      "rating": 4.7,
+      "reviewsCount": 35,
+      "isBookmarked": false
     },
     {
       "name": "Ikan Bakar Manokwari",
@@ -1614,7 +1860,13 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Pembuka",
-      "id": "54ed"
+      "id": "54ed",
+      "difficulty": "Mudah",
+      "servings": 4,
+      "calories": 264,
+      "rating": 4.9,
+      "reviewsCount": 48,
+      "isBookmarked": false
     },
     {
       "id": "17a9",
@@ -1645,7 +1897,13 @@
         "Oseng bunga pepaya siap dihidangkan"
       ],
       "time": "1 Jam",
-      "category": "Makanan Pembuka"
+      "category": "Makanan Pembuka",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 281,
+      "rating": 4.6,
+      "reviewsCount": 61,
+      "isBookmarked": false
     },
     {
       "id": "8a63",
@@ -1676,7 +1934,13 @@
         "Siap dihidangkan dan dinikmati dengan segelas teh"
       ],
       "time": "1 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 298,
+      "rating": 4.8,
+      "reviewsCount": 74,
+      "isBookmarked": false
     },
     {
       "name": "Bika Ambon",
@@ -1716,7 +1980,13 @@
       ],
       "time": "1 Jam 50 Menit",
       "category": "Makanan Penutup",
-      "id": "e63a"
+      "id": "e63a",
+      "difficulty": "Sedang",
+      "servings": 2,
+      "calories": 315,
+      "rating": 4.5,
+      "reviewsCount": 87,
+      "isBookmarked": false
     },
     {
       "id": "1b90",
@@ -1750,7 +2020,13 @@
         "Keluarkan kue dari pengukus,biarkan hangat dan olesi permukaan kue dengan minyak,sajikan"
       ],
       "time": "1 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 332,
+      "rating": 4.7,
+      "reviewsCount": 15,
+      "isBookmarked": false
     },
     {
       "id": "caa8",
@@ -1778,7 +2054,12 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Penutup",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 349,
+      "rating": 4.9,
+      "reviewsCount": 28
     },
     {
       "name": "Kue Bay Tat",
@@ -1807,7 +2088,12 @@
       "time": "3 Jam",
       "category": "Makanan Penutup",
       "id": "23a1",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 366,
+      "rating": 4.6,
+      "reviewsCount": 41
     },
     {
       "name": "Bolu Kemojo",
@@ -1835,7 +2121,13 @@
       ],
       "time": "45 Menit",
       "category": "Makanan Penutup",
-      "id": "1444"
+      "id": "1444",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 383,
+      "rating": 4.8,
+      "reviewsCount": 54,
+      "isBookmarked": false
     },
     {
       "id": "9da0",
@@ -1864,7 +2156,13 @@
         "Tepung gomak siap disajikan"
       ],
       "time": "45 Menit",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 400,
+      "rating": 4.5,
+      "reviewsCount": 67,
+      "isBookmarked": false
     },
     {
       "name": "Kue Padamaran",
@@ -1887,7 +2185,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Penutup",
-      "id": "1c70"
+      "id": "1c70",
+      "difficulty": "Sedang",
+      "servings": 2,
+      "calories": 417,
+      "rating": 4.7,
+      "reviewsCount": 80,
+      "isBookmarked": false
     },
     {
       "id": "54e2",
@@ -1920,7 +2224,13 @@
         "Angkat dan sajikan"
       ],
       "time": "1 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 434,
+      "rating": 4.9,
+      "reviewsCount": 93,
+      "isBookmarked": false
     },
     {
       "id": "02ca",
@@ -1963,7 +2273,13 @@
         "Enak dikonsumsi dingin"
       ],
       "time": "30 Menit",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 451,
+      "rating": 4.6,
+      "reviewsCount": 21,
+      "isBookmarked": false
     },
     {
       "id": "d315",
@@ -1992,7 +2308,13 @@
         "Siapkan kukusan Lalu kukus kurleb 25 menit"
       ],
       "time": "1 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 468,
+      "rating": 4.8,
+      "reviewsCount": 34,
+      "isBookmarked": false
     },
     {
       "name": "Kue Sari Pengantin",
@@ -2042,7 +2364,13 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Penutup",
-      "id": "00ff"
+      "id": "00ff",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 485,
+      "rating": 4.5,
+      "reviewsCount": 47,
+      "isBookmarked": false
     },
     {
       "name": "Kue Putri Keraton",
@@ -2073,7 +2401,13 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Penutup",
-      "id": "0d0d"
+      "id": "0d0d",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 502,
+      "rating": 4.7,
+      "reviewsCount": 60,
+      "isBookmarked": false
     },
     {
       "name": "Bingka Barandam",
@@ -2108,7 +2442,13 @@
       ],
       "time": "40 Menit",
       "category": "Makanan Penutup",
-      "id": "6f87"
+      "id": "6f87",
+      "difficulty": "Sedang",
+      "servings": 2,
+      "calories": 519,
+      "rating": 4.9,
+      "reviewsCount": 73,
+      "isBookmarked": false
     },
     {
       "name": "Kue Lapis Cempedak",
@@ -2141,7 +2481,13 @@
       ],
       "time": "4 Jam",
       "category": "Makanan Penutup",
-      "id": "8ead"
+      "id": "8ead",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 536,
+      "rating": 4.6,
+      "reviewsCount": 86,
+      "isBookmarked": false
     },
     {
       "name": "Kue Apem Putih",
@@ -2175,7 +2521,13 @@
       ],
       "time": "20 Menit",
       "category": "Makanan Penutup",
-      "id": "185c"
+      "id": "185c",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 553,
+      "rating": 4.8,
+      "reviewsCount": 14,
+      "isBookmarked": false
     },
     {
       "name": "Kue Pancong",
@@ -2205,7 +2557,13 @@
       ],
       "time": "35 Menit",
       "category": "Makanan Penutup",
-      "id": "c443"
+      "id": "c443",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 570,
+      "rating": 4.5,
+      "reviewsCount": 27,
+      "isBookmarked": false
     },
     {
       "id": "41dc",
@@ -2233,7 +2591,13 @@
         "colenak siap dihidangkan"
       ],
       "time": "20 Menit",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 587,
+      "rating": 4.7,
+      "reviewsCount": 40,
+      "isBookmarked": false
     },
     {
       "name": "Kue Lumpur",
@@ -2264,7 +2628,13 @@
       ],
       "time": "2 Jam",
       "category": "Makanan Penutup",
-      "id": "7605"
+      "id": "7605",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 254,
+      "rating": 4.9,
+      "reviewsCount": 53,
+      "isBookmarked": false
     },
     {
       "id": "38e2",
@@ -2302,7 +2672,13 @@
         "Kue geplak siap disajikan"
       ],
       "time": "2 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 2,
+      "calories": 271,
+      "rating": 4.6,
+      "reviewsCount": 66,
+      "isBookmarked": false
     },
     {
       "id": "695a",
@@ -2326,7 +2702,13 @@
         "Siap disajikan"
       ],
       "time": "4 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 288,
+      "rating": 4.8,
+      "reviewsCount": 79,
+      "isBookmarked": false
     },
     {
       "id": "f9c7",
@@ -2364,7 +2746,12 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Penutup",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 305,
+      "rating": 4.5,
+      "reviewsCount": 92
     },
     {
       "id": "4c2b",
@@ -2412,7 +2799,13 @@
         "Sajikan kompyang khas NTT ini sebagai camilan sarapan maupun bekal"
       ],
       "time": "1 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 322,
+      "rating": 4.7,
+      "reviewsCount": 20,
+      "isBookmarked": false
     },
     {
       "name": "Naga Sari",
@@ -2454,7 +2847,13 @@
       ],
       "time": "1 Jam",
       "category": "Makanan Penutup",
-      "id": "62bd"
+      "id": "62bd",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 339,
+      "rating": 4.9,
+      "reviewsCount": 33,
+      "isBookmarked": false
     },
     {
       "name": "Kue Katrisolo",
@@ -2484,7 +2883,13 @@
       ],
       "time": "10 Jam",
       "category": "Makanan Penutup",
-      "id": "4f94"
+      "id": "4f94",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 356,
+      "rating": 4.6,
+      "reviewsCount": 46,
+      "isBookmarked": false
     },
     {
       "name": "Kue Cucur",
@@ -2517,7 +2922,13 @@
       ],
       "time": "1 Jam 30 Menit",
       "category": "Makanan Penutup",
-      "id": "4323"
+      "id": "4323",
+      "difficulty": "Mahir",
+      "servings": 2,
+      "calories": 373,
+      "rating": 4.8,
+      "reviewsCount": 59,
+      "isBookmarked": false
     },
     {
       "name": "Kue Tetu",
@@ -2554,7 +2965,12 @@
       "time": "30 Menit",
       "category": "Makanan Penutup",
       "id": "3a71",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 390,
+      "rating": 4.5,
+      "reviewsCount": 72
     },
     {
       "name": "Klapertart",
@@ -2591,7 +3007,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Penutup",
-      "id": "7ca0"
+      "id": "7ca0",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 407,
+      "rating": 4.7,
+      "reviewsCount": 85,
+      "isBookmarked": false
     },
     {
       "name": "Kasoami",
@@ -2615,7 +3037,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Penutup",
-      "id": "5306"
+      "id": "5306",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 424,
+      "rating": 4.9,
+      "reviewsCount": 13,
+      "isBookmarked": false
     },
     {
       "name": "Es Pisang Ijo",
@@ -2657,7 +3085,13 @@
       ],
       "time": "45 Menit",
       "category": "Makanan Penutup",
-      "id": "988b"
+      "id": "988b",
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 441,
+      "rating": 4.6,
+      "reviewsCount": 26,
+      "isBookmarked": false
     },
     {
       "id": "905b",
@@ -2691,7 +3125,13 @@
         "Siap di nikmati selagi hangat"
       ],
       "time": "30 Menit",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 458,
+      "rating": 4.8,
+      "reviewsCount": 39,
+      "isBookmarked": false
     },
     {
       "id": "dc1d",
@@ -2722,7 +3162,13 @@
         "Asidah siap disajikan"
       ],
       "time": "40 Menit",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 2,
+      "calories": 475,
+      "rating": 4.5,
+      "reviewsCount": 52,
+      "isBookmarked": false
     },
     {
       "id": "c335",
@@ -2760,7 +3206,13 @@
         "Tunggu agak dingin baru di potong"
       ],
       "time": "1 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 492,
+      "rating": 4.7,
+      "reviewsCount": 65,
+      "isBookmarked": false
     },
     {
       "id": "4094",
@@ -2803,7 +3255,13 @@
         "Buka kertas roti kemudian, Potong2 sesuai selera"
       ],
       "time": "2 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 509,
+      "rating": 4.9,
+      "reviewsCount": 78,
+      "isBookmarked": false
     },
     {
       "id": "63fb",
@@ -2831,7 +3289,12 @@
       ],
       "time": "40 Menit",
       "category": "Makanan Penutup",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 526,
+      "rating": 4.6,
+      "reviewsCount": 91
     },
     {
       "id": "8750",
@@ -2860,7 +3323,13 @@
         "Dinginkan 30- 40 menitan dan masukkan dalam wadah kemasan"
       ],
       "time": "2 Jam",
-      "category": "Makanan Penutup"
+      "category": "Makanan Penutup",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 543,
+      "rating": 4.8,
+      "reviewsCount": 19,
+      "isBookmarked": false
     },
     {
       "name": "Bubur Sagu",
@@ -2888,7 +3357,13 @@
       ],
       "time": "30 Menit",
       "category": "Makanan Penutup",
-      "id": "ad3b"
+      "id": "ad3b",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 560,
+      "rating": 4.5,
+      "reviewsCount": 32,
+      "isBookmarked": false
     },
     {
       "name": "Kue Bagea",
@@ -2931,7 +3406,13 @@
       ],
       "time": "75 Menit",
       "category": "Makanan Penutup",
-      "id": "e00f"
+      "id": "e00f",
+      "difficulty": "Mahir",
+      "servings": 2,
+      "calories": 577,
+      "rating": 4.7,
+      "reviewsCount": 45,
+      "isBookmarked": false
     },
     {
       "name": "Arsik Ikan Mas",
@@ -2998,7 +3479,13 @@
       ],
       "time": "2 Jam",
       "category": "Makanan Utama",
-      "id": "449e"
+      "id": "449e",
+      "difficulty": "Mahir",
+      "servings": 4,
+      "calories": 594,
+      "rating": 4.9,
+      "reviewsCount": 58,
+      "isBookmarked": false
     },
     {
       "id": "c9d6",
@@ -3042,7 +3529,12 @@
       ],
       "time": "2 Jam 30 Menit",
       "category": "Makanan Utama",
-      "isBookmarked": true
+      "isBookmarked": true,
+      "difficulty": "Sedang",
+      "servings": 6,
+      "calories": 261,
+      "rating": 4.6,
+      "reviewsCount": 71
     },
     {
       "id": "b455",
@@ -3087,7 +3579,13 @@
         "masukkan bahan cemplung sajikan"
       ],
       "time": "30 Menit",
-      "category": "Makanan Utama"
+      "category": "Makanan Utama",
+      "difficulty": "Sedang",
+      "servings": 4,
+      "calories": 278,
+      "rating": 4.8,
+      "reviewsCount": 84,
+      "isBookmarked": false
     },
     {
       "id": "20af",
@@ -3129,7 +3627,13 @@
         "Siap disajikan"
       ],
       "time": "30 Menit",
-      "category": "Makanan Utama"
+      "category": "Makanan Utama",
+      "difficulty": "Mahir",
+      "servings": 6,
+      "calories": 295,
+      "rating": 4.5,
+      "reviewsCount": 12,
+      "isBookmarked": false
     }
   ]
 }
